@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | PureSize</title>
+    <meta name="description" content="Privacy Policy for PureSize Water Treatment. Learn how we collect, use, and protect your information.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] }, colors: { primary: '#0ea5e9', primaryDark: '#0284c7', secondary: '#0f172a' } } }
+        }
+    </script>
+    <style>
+        .glass-panel { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+        .mobile-menu { display: none; }
+        .mobile-menu.open { display: block; }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex items-center gap-2">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    <span class="font-bold text-xl tracking-tight text-secondary">Pure<span class="text-primary">Size</span></span>
+                </a>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html#calculator" class="text-slate-600 hover:text-primary font-medium transition">Calculator</a>
+                    <a href="index.html#guide" class="text-slate-600 hover:text-primary font-medium transition">Buying Guide</a>
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-slate-600 hover:text-primary font-medium transition py-2">Sizing Guides<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                        <div class="absolute left-0 mt-1 w-64 bg-white rounded-xl shadow-xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div class="py-2">
+                                <a href="large-house.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-primary transition">Large House Sizing</a>
+                                <a href="family-of-5.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-primary transition">Family of 5 Guide</a>
+                                <a href="family-of-4.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-primary transition">Family of 4 Guide</a>
+                                <a href="apartments.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-primary transition">Apartments &amp; Condos</a>
+                                <a href="grain-size.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-primary transition">Grain Size Explained</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="text-slate-600 hover:text-primary font-medium transition">About</a>
+                    <a href="contact.html" class="text-slate-600 hover:text-primary font-medium transition">Contact</a>
+                    <a href="index.html#calculator" class="bg-primary hover:bg-primaryDark text-white px-5 py-2.5 rounded-full font-medium transition shadow-md shadow-primary/30">Size My System</a>
+                </div>
+                <button class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100" onclick="document.getElementById('mobileMenu').classList.toggle('open')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="mobile-menu md:hidden bg-white border-t border-slate-100 px-4 pb-4">
+            <div class="flex flex-col space-y-2 pt-3">
+                <a href="index.html#calculator" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Calculator</a>
+                <a href="large-house.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Large House Guide</a>
+                <a href="family-of-5.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Family of 5</a>
+                <a href="family-of-4.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Family of 4</a>
+                <a href="apartments.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Apartments</a>
+                <a href="grain-size.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Grain Size Guide</a>
+                <a href="about.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">About</a>
+                <a href="contact.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Contact</a>
+                <a href="index.html#calculator" class="bg-primary text-white px-5 py-3 rounded-full font-medium text-center">Size My System</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-16 overflow-hidden bg-secondary">
+        <div class="absolute inset-0 z-0"><div class="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-800 opacity-90"></div></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">Privacy Policy</h1>
+            <p class="text-slate-400">Last Updated: March 2026</p>
+        </div>
+    </header>
+
+    <main class="flex-grow py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-slate-600 space-y-8 leading-relaxed">
+            <section><h2 class="text-2xl font-bold text-secondary mb-4">1. Introduction</h2><p>Welcome to PureSize Water Treatment ("we", "our", "us"). We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website and tell you about your privacy rights.</p></section>
+            <section><h2 class="text-2xl font-bold text-secondary mb-4">2. The Data We Collect</h2><p class="mb-3">We may collect, use, store, and transfer different kinds of personal data about you:</p><ul class="list-disc pl-6 space-y-2"><li><strong>Identity Data:</strong> includes first name, last name.</li><li><strong>Contact Data:</strong> includes email address and telephone numbers (if provided via our contact form).</li><li><strong>Technical Data:</strong> includes internet protocol (IP) address, browser type and version, time zone setting and location, operating system, and platform.</li><li><strong>Usage Data:</strong> includes information about how you use our website, including the sizing calculator inputs (which are processed locally in your browser).</li></ul></section>
+            <section><h2 class="text-2xl font-bold text-secondary mb-4">3. How We Use Your Data</h2><p class="mb-3">We will only use your personal data when the law allows us to. Most commonly, we will use your personal data to:</p><ul class="list-disc pl-6 space-y-2"><li>Respond to your inquiries when you contact us via email or our contact form.</li><li>Improve our website, services, marketing, and customer relationships.</li><li>Administer and protect our business and this website.</li></ul><p class="mt-3"><strong>We do not sell, trade, or rent your personal identification information to third parties.</strong></p></section>
+            <section><h2 class="text-2xl font-bold text-secondary mb-4">4. Cookies and Third-Party Links</h2><p>Our website may use "cookies" to enhance user experience. You can set your browser to refuse all or some browser cookies. This website may include links to third-party websites. We do not control these third-party websites and are not responsible for their privacy statements.</p></section>
+            <section><h2 class="text-2xl font-bold text-secondary mb-4">5. Contact Us</h2><p>If you have any questions about this privacy policy, please contact Rex Taylor at:</p><div class="mt-4 p-4 bg-slate-50 rounded-xl border border-slate-100"><p><strong>PureSize Water Treatment</strong></p><p>4144 N 44th St, Phoenix, AZ 85018</p><p>Email: <a href="mailto:sizing@hwaterrefiner.com" class="text-primary hover:underline">sizing@hwaterrefiner.com</a></p><p>Phone: (602) 396-4423</p></div></section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary pt-16 pb-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4"><svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg><span class="font-bold text-xl text-white tracking-tight">Pure<span class="text-primary">Size</span></span></div>
+                    <p class="text-slate-400 text-sm max-w-md">Engineering the perfect fit for your home's specific water chemistry. Stop guessing, start softening efficiently.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="index.html#calculator" class="hover:text-primary transition">Sizing Calculator</a></li>
+                        <li><a href="index.html#guide" class="hover:text-primary transition">Expert Buying Guide</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Sizing Guides</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="large-house.html" class="hover:text-primary transition">Large House</a></li>
+                        <li><a href="family-of-5.html" class="hover:text-primary transition">Family of 5</a></li>
+                        <li><a href="family-of-4.html" class="hover:text-primary transition">Family of 4</a></li>
+                        <li><a href="apartments.html" class="hover:text-primary transition">Apartments &amp; Condos</a></li>
+                        <li><a href="grain-size.html" class="hover:text-primary transition">Grain Size Explained</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="affiliate.html" class="hover:text-white transition">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 PureSize Water Treatment Engineering. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Data methodology complies with WQA Sizing Standards.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 10) { nav.classList.add('bg-white/90','shadow-sm'); nav.classList.remove('bg-transparent'); }
+            else { nav.classList.add('bg-transparent'); nav.classList.remove('bg-white/90','shadow-sm'); }
+        });
+    </script>
+</body>
+</html>
