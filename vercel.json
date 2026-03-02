@@ -1,0 +1,86 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/large-house.html",
+      "destination": "/large-house",
+      "permanent": true
+    },
+    {
+      "source": "/family-of-4.html",
+      "destination": "/family-of-4",
+      "permanent": true
+    },
+    {
+      "source": "/family-of-5.html",
+      "destination": "/family-of-5",
+      "permanent": true
+    },
+    {
+      "source": "/apartments.html",
+      "destination": "/apartments",
+      "permanent": true
+    },
+    {
+      "source": "/grain-size.html",
+      "destination": "/grain-size",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/privacy.html",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/terms.html",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/affiliate.html",
+      "destination": "/affiliate",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-choose-water-softener-size.html",
+      "destination": "/how-to-choose-water-softener-size",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "index, follow"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    }
+  ]
+}
