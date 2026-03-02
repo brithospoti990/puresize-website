@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Choose Water Softener Size: The Complete 2026 Guide | PureSize</title>
+    <meta name="description" content="Learn exactly how to choose the right water softener size in 2026. We explain the math, the metrics (GPG, GPM, grain capacity), and how to avoid the biggest sizing mistakes. Free calculator included.">
+    <meta name="keywords" content="how to choose water softener size, water softener sizing, grain capacity, GPG hardness, water softener size guide 2026, water softener calculator">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://puresize.com/how-to-choose-water-softener-size">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="How to Choose Water Softener Size: The Complete 2026 Guide | PureSize">
+    <meta property="og:description" content="The professional step-by-step method for sizing a water softener correctly. Covers daily usage, GPG hardness, iron compensation, flow rate, resin quality, and valve technology.">
+    <meta property="og:type" content="article">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: { primary: '#0ea5e9', primaryDark: '#0284c7', secondary: '#0f172a' }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
+        .mobile-menu { display: none; }
+        .mobile-menu.open { display: block; }
+        .toc-link { transition: all 0.2s; }
+        .toc-link:hover { padding-left: 1rem; color: #0ea5e9; }
+        .step-connector { position: relative; }
+        .step-connector::before { content: ''; position: absolute; left: 1.25rem; top: 3rem; bottom: -1rem; width: 2px; background: linear-gradient(to bottom, #0ea5e9, transparent); }
+    </style>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Choose Water Softener Size",
+      "description": "A step-by-step guide to calculating the exact grain capacity water softener your home needs based on household size, water hardness, iron levels, and flow rate.",
+      "totalTime": "PT5M",
+      "step": [
+        { "@type": "HowToStep", "name": "Determine Daily Water Usage", "text": "Multiply the number of people in your home by 75 gallons to get your daily softener demand." },
+        { "@type": "HowToStep", "name": "Determine Water Hardness (GPG)", "text": "Look up your municipal water report or test with a strip. Add 4 GPG per 1 PPM of iron for well water." },
+        { "@type": "HowToStep", "name": "Calculate Target Grain Capacity", "text": "Multiply daily gallons by hardness GPG then multiply by 7 days to get your minimum grain capacity." },
+        { "@type": "HowToStep", "name": "Verify Flow Rate (GPM)", "text": "Confirm the valve on your chosen system can deliver at least 8 GPM for 1-2 bathrooms, 11-13 GPM for 3-4 bathrooms." },
+        { "@type": "HowToStep", "name": "Select Resin Quality", "text": "Choose 10% cross-link resin for city water to resist chlorine. 8% cross-link is suitable for well water only." },
+        { "@type": "HowToStep", "name": "Choose Metered Valve Technology", "text": "Always buy a metered on-demand valve. Never buy a timer-based system that regenerates regardless of actual water use." }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What size water softener do I need for a family of 4?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A family of 4 with 10 GPG hardness needs: 4 × 75 = 300 daily gallons × 10 GPG = 3,000 daily grains × 7 days = 21,000 grain capacity. A 32,000 grain system is the ideal match, providing buffer for higher usage days." }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if my water softener is too small?",
+          "acceptedAnswer": { "@type": "Answer", "text": "An undersized water softener regenerates every 2-3 days instead of every 7. This doubles salt usage, wears out the valve 2x faster, and allows hard water to slip through during peak demand." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a 48,000 grain water softener better than 32,000?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Only if your math requires it. A 48,000 grain system holds 1.5 cubic feet of resin vs 1.0 cubic feet. If your calculated grain need is under 32,000, the larger system may cause channeling and bacterial growth from infrequent regeneration." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I account for iron when sizing a water softener?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Add 4 GPG to your hardness score for every 1 PPM of iron. For example: 15 GPG hardness + 2 PPM iron = 15 + 8 = 23 GPG compensated hardness. Always use this adjusted number in your sizing calculation." }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex items-center gap-2">
+                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    <span class="font-bold text-xl tracking-tight text-secondary">Pure<span class="text-primary">Size</span></span>
+                </a>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html" class="text-slate-600 hover:text-primary font-medium transition">Home</a>
+                    <a href="index.html#calculator" class="text-slate-600 hover:text-primary font-medium transition">Calculator</a>
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 text-primary font-semibold transition py-2">
+                            Sizing Guides
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="absolute left-0 mt-1 w-64 bg-white rounded-xl shadow-xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div class="py-2">
+                                <a href="how-to-choose-water-softener-size.html" class="block px-4 py-2 text-sm text-primary bg-blue-50 font-semibold">&#10003; How to Choose Size</a>
+                                <a href="large-house.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-primary transition">Large House Sizing</a>
+                                <a href="family-of-5.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-primary transition">Family of 5 Guide</a>
+                                <a href="family-of-4.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-primary transition">Family of 4 Guide</a>
+                                <a href="apartments.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-primary transition">Apartments &amp; Condos</a>
+                                <a href="grain-size.html" class="block px-4 py-2 text-sm text-slate-600 hover:bg-slate-50 hover:text-primary transition">Grain Size Explained</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="index.html#reviews" class="text-slate-600 hover:text-primary font-medium transition">Top Picks</a>
+                    <a href="about.html" class="text-slate-600 hover:text-primary font-medium transition">About</a>
+                    <a href="contact.html" class="text-slate-600 hover:text-primary font-medium transition">Contact</a>
+                    <a href="https://waterrefiner.com/info/springwell-futuresoft/" target="_blank" rel="noopener sponsored" class="bg-primary hover:bg-primaryDark text-white px-5 py-2.5 rounded-full font-medium transition shadow-md shadow-primary/30">Get Best Price &rarr;</a>
+                </div>
+                <button class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="mobile-menu md:hidden bg-white border-t border-slate-100 px-4 pb-4">
+            <div class="flex flex-col space-y-3 pt-3">
+                <a href="index.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Home</a>
+                <a href="index.html#calculator" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Calculator</a>
+                <a href="how-to-choose-water-softener-size.html" class="text-primary font-semibold py-2 border-b border-slate-50">How to Choose Size</a>
+                <a href="large-house.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Large House Guide</a>
+                <a href="family-of-5.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Family of 5</a>
+                <a href="family-of-4.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Family of 4</a>
+                <a href="apartments.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Apartments</a>
+                <a href="grain-size.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Grain Size Guide</a>
+                <a href="about.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">About</a>
+                <a href="contact.html" class="text-slate-600 hover:text-primary font-medium py-2 border-b border-slate-50">Contact</a>
+                <a href="https://waterrefiner.com/info/springwell-futuresoft/" target="_blank" rel="noopener sponsored" class="bg-primary text-white px-5 py-3 rounded-full font-medium text-center">&#127942; Get Best Price on SpringWell</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- OFFER BANNER -->
+    <div class="bg-amber-500 py-3 px-4 text-center" style="margin-top: 80px;">
+        <p class="text-sm font-semibold text-white">&#128293; <strong>Top Pick 2026:</strong> SpringWell FutureSoft — Salt-Free, No Maintenance, Lifetime Warranty.
+        <a href="https://waterrefiner.com/info/springwell-futuresoft/" target="_blank" rel="noopener sponsored" class="underline hover:text-amber-100 font-bold ml-1">Check Current Pricing &rarr;</a>
+        &nbsp;|&nbsp;
+        <a href="https://waterrefiner.com/info/css1/" target="_blank" rel="noopener sponsored" class="underline hover:text-amber-100 font-bold">Filter + Softener Combo &rarr;</a></p>
+    </div>
+
+    <!-- HERO -->
+    <header class="relative pt-16 pb-20 overflow-hidden bg-secondary">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-800 opacity-90"></div>
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-primary/20 blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-blue-600/20 blur-3xl"></div>
+        </div>
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center gap-3 mb-6">
+                <span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary border border-primary/20 text-sm font-semibold tracking-wide uppercase">The Master Guide</span>
+                <span class="inline-block py-1 px-3 rounded-full bg-white/10 text-slate-300 border border-white/10 text-sm font-semibold">6-Step Method</span>
+                <span class="inline-block py-1 px-3 rounded-full bg-green-500/20 text-green-300 border border-green-500/20 text-sm font-semibold">2026 Updated</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                How to Choose <br class="hidden md:block"><span class="text-primary">Water Softener Size</span>
+            </h1>
+            <p class="text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-8">
+                Choosing the right water softener size is a simple, scientific equation — not guesswork. Here is the exact 6-step method water treatment professionals use to engineer perfectly sized soft water systems.
+            </p>
+            <!-- Quick stats -->
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-400 mt-4">
+                <span class="flex items-center gap-2"><svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>5-minute read</span>
+                <span class="flex items-center gap-2"><svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>WQA 2026 Standards</span>
+                <span class="flex items-center gap-2"><svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>City &amp; Well Water</span>
+                <span class="flex items-center gap-2"><svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Free Calculator Included</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <nav class="flex items-center gap-2 text-sm text-slate-500">
+                <a href="index.html" class="hover:text-primary transition">Home</a>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <a href="#" class="hover:text-primary transition">Sizing Guides</a>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                <span class="text-slate-800 font-medium">How to Choose Water Softener Size</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+
+                <!-- SIDEBAR (TOC + Quick CTA) -->
+                <aside class="lg:col-span-1 order-2 lg:order-1">
+                    <div class="sticky top-28 space-y-6">
+                        <!-- Table of Contents -->
+                        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+                            <h3 class="font-bold text-secondary mb-4 flex items-center gap-2 text-sm uppercase tracking-widest">
+                                <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h7"></path></svg>
+                                In This Guide
+                            </h3>
+                            <ol class="space-y-2 text-sm">
+                                <li><a href="#step1" class="toc-link flex items-start gap-2 text-slate-600 hover:text-primary py-1 block"><span class="bg-primary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5">1</span>Daily Water Usage</a></li>
+                                <li><a href="#step2" class="toc-link flex items-start gap-2 text-slate-600 hover:text-primary py-1 block"><span class="bg-primary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5">2</span>Water Hardness (GPG)</a></li>
+                                <li><a href="#step3" class="toc-link flex items-start gap-2 text-slate-600 hover:text-primary py-1 block"><span class="bg-primary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5">3</span>Target Grain Capacity</a></li>
+                                <li><a href="#step4" class="toc-link flex items-start gap-2 text-slate-600 hover:text-primary py-1 block"><span class="bg-primary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5">4</span>Flow Rate (GPM)</a></li>
+                                <li><a href="#step5" class="toc-link flex items-start gap-2 text-slate-600 hover:text-primary py-1 block"><span class="bg-primary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5">5</span>Resin Quality</a></li>
+                                <li><a href="#step6" class="toc-link flex items-start gap-2 text-slate-600 hover:text-primary py-1 block"><span class="bg-primary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5">6</span>Valve Technology</a></li>
+                                <li><a href="#mistakes" class="toc-link flex items-start gap-2 text-slate-600 hover:text-primary py-1 block"><span class="bg-slate-400 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5">!</span>Sizing Mistakes</a></li>
+                                <li><a href="#recommendation" class="toc-link flex items-start gap-2 text-slate-600 hover:text-primary py-1 block"><span class="bg-amber-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5">&#9733;</span>Our Recommendation</a></li>
+                                <li><a href="#faq" class="toc-link flex items-start gap-2 text-slate-600 hover:text-primary py-1 block"><span class="bg-slate-400 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5">?</span>FAQ</a></li>
+                            </ol>
+                        </div>
+
+                        <!-- Sidebar CTA -->
+                        <div class="bg-slate-900 rounded-2xl p-6 text-white">
+                            <p class="text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">Skip the Math</p>
+                            <h3 class="font-bold text-lg mb-2">Free Sizing Calculator</h3>
+                            <p class="text-slate-400 text-sm mb-4">Enter your household size and hardness. We calculate your exact grain capacity instantly.</p>
+                            <a href="index.html#calculator" class="block text-center bg-primary hover:bg-primaryDark text-white py-3 rounded-xl font-bold transition text-sm">Open Calculator &rarr;</a>
+                        </div>
+
+                        <!-- Sidebar affiliate -->
+                        <div class="bg-white rounded-2xl border border-amber-200 p-6">
+                            <p class="text-xs font-bold text-amber-600 uppercase tracking-widest mb-2">&#127942; Editor's Choice</p>
+                            <h3 class="font-bold text-secondary mb-1">SpringWell FutureSoft</h3>
+                            <div class="text-yellow-400 text-sm mb-2">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="text-slate-500 font-bold">4.9/5</span></div>
+                            <p class="text-xs text-slate-500 mb-4">Salt-free, lifetime warranty, no maintenance. The top-rated system for 2026.</p>
+                            <a href="https://waterrefiner.com/info/springwell-futuresoft/" target="_blank" rel="noopener sponsored" class="block text-center bg-amber-500 hover:bg-amber-400 text-white py-2.5 rounded-xl font-bold transition text-sm">View Price &rarr;</a>
+                            <a href="https://waterrefiner.com/info/css1/" target="_blank" rel="noopener sponsored" class="block text-center text-primary text-xs mt-2 hover:underline font-semibold">+ Filter &amp; Softener Combo</a>
+                        </div>
+
+                        <!-- Related guides -->
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6">
+                            <h3 class="font-bold text-secondary mb-4 text-sm uppercase tracking-widest">Related Guides</h3>
+                            <ul class="space-y-2 text-sm">
+                                <li><a href="family-of-4.html" class="text-slate-600 hover:text-primary transition flex items-center gap-2"><svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>Family of 4 Sizing Guide</a></li>
+                                <li><a href="family-of-5.html" class="text-slate-600 hover:text-primary transition flex items-center gap-2"><svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>Family of 5 Sizing Guide</a></li>
+                                <li><a href="large-house.html" class="text-slate-600 hover:text-primary transition flex items-center gap-2"><svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>Large House Sizing Guide</a></li>
+                                <li><a href="grain-size.html" class="text-slate-600 hover:text-primary transition flex items-center gap-2"><svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>Grain Size Explained</a></li>
+                                <li><a href="apartments.html" class="text-slate-600 hover:text-primary transition flex items-center gap-2"><svg class="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>Apartments &amp; Condos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- ARTICLE CONTENT -->
+                <article class="lg:col-span-3 order-1 lg:order-2">
+
+                    <!-- Intro callout -->
+                    <div class="bg-white rounded-2xl border-l-4 border-primary p-6 shadow-sm mb-10 flex items-start gap-4">
+                        <div class="bg-primary/10 text-primary p-3 rounded-xl shrink-0">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-secondary mb-1">The Goldilocks Problem</p>
+                            <p class="text-slate-600 text-sm leading-relaxed">Buy too small: your system burns through salt, wastes thousands of gallons, and breaks down years early. Buy too large: water stagnates in the tank and bacteria grows in the resin bed. You must find the precise zone — and that requires math, not guesswork.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== STEP 1 ===== -->
+                    <div id="step1" class="step-connector mb-12">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg shrink-0 shadow-lg shadow-primary/30">1</div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-secondary">Determine Your Daily Water Usage</h2>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed mb-6">The first variable is how much water your household uses indoors. While you could look at your water bill, the WQA industry standard formula is more reliable because it isolates indoor use (bypassing outdoor irrigation which doesn't need softening).</p>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-6">
+                            <p class="font-bold text-secondary mb-3 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                The WQA Standard Formula
+                            </p>
+                            <p class="text-slate-600 text-sm mb-4">The average person uses <strong>75 gallons per day</strong> for indoor use — showering, laundry, dishes, and toilets.</p>
+                            <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 font-mono text-sm">
+                                <div class="text-slate-500 mb-1">Formula:</div>
+                                <div class="text-slate-900 font-bold">(Number of People) &times; 75 = Daily Gallons</div>
+                                <div class="text-primary mt-2 font-bold">Example: 4 people &times; 75 = <span class="text-secondary">300 gallons/day</span></div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                            <div class="bg-slate-50 rounded-xl p-4 text-center border border-slate-100"><div class="text-2xl font-bold text-primary">75</div><div class="text-xs text-slate-500 mt-1">gal/day per person</div></div>
+                            <div class="bg-slate-50 rounded-xl p-4 text-center border border-slate-100"><div class="text-2xl font-bold text-primary">150</div><div class="text-xs text-slate-500 mt-1">2-person household</div></div>
+                            <div class="bg-slate-50 rounded-xl p-4 text-center border border-slate-100"><div class="text-2xl font-bold text-primary">300</div><div class="text-xs text-slate-500 mt-1">4-person household</div></div>
+                            <div class="bg-slate-50 rounded-xl p-4 text-center border border-slate-100"><div class="text-2xl font-bold text-primary">450</div><div class="text-xs text-slate-500 mt-1">6-person household</div></div>
+                        </div>
+                    </div>
+
+                    <!-- ===== STEP 2 ===== -->
+                    <div id="step2" class="step-connector mb-12">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg shrink-0 shadow-lg shadow-primary/30">2</div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-secondary">Determine Your Water Hardness (GPG)</h2>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed mb-6">Water hardness is measured in <strong>Grains Per Gallon (GPG)</strong>. Find this number in your local municipal water quality report (available on your city's website), or use an inexpensive at-home test strip from any hardware store.</p>
+
+                        <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-sm mb-6">
+                            <table class="w-full text-left border-collapse bg-white">
+                                <thead>
+                                    <tr class="bg-slate-900 text-white">
+                                        <th class="p-4 font-semibold">GPG Level</th>
+                                        <th class="p-4 font-semibold">Classification</th>
+                                        <th class="p-4 font-semibold">What You'll Notice</th>
+                                        <th class="p-4 font-semibold">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100 text-sm">
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="p-4 font-bold text-slate-700">0 – 3 GPG</td>
+                                        <td class="p-4 text-slate-600">Slightly Hard</td>
+                                        <td class="p-4 text-slate-600">No visible issues yet</td>
+                                        <td class="p-4 text-slate-500 italic">Optional</td>
+                                    </tr>
+                                    <tr class="bg-yellow-50 hover:bg-yellow-100 transition">
+                                        <td class="p-4 font-bold text-yellow-700">3 – 7 GPG</td>
+                                        <td class="p-4 text-yellow-700 font-semibold">Moderately Hard</td>
+                                        <td class="p-4 text-slate-600">Spots on dishes, dull laundry</td>
+                                        <td class="p-4 text-yellow-700 font-semibold">Recommended</td>
+                                    </tr>
+                                    <tr class="bg-orange-50 hover:bg-orange-100 transition">
+                                        <td class="p-4 font-bold text-orange-700">7 – 10 GPG</td>
+                                        <td class="p-4 text-orange-700 font-semibold">Hard</td>
+                                        <td class="p-4 text-slate-600">Scale on faucets, shortened appliance life</td>
+                                        <td class="p-4 text-orange-700 font-semibold">Mandatory</td>
+                                    </tr>
+                                    <tr class="bg-red-50 hover:bg-red-100 transition">
+                                        <td class="p-4 font-bold text-red-700">10+ GPG</td>
+                                        <td class="p-4 text-red-700 font-bold">Very Hard</td>
+                                        <td class="p-4 text-slate-600">Pipe damage, white crust everywhere</td>
+                                        <td class="p-4 text-red-700 font-bold">Urgent</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Iron callout -->
+                        <div class="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-xl">
+                            <h3 class="font-bold text-orange-900 mb-2 flex items-center gap-2">
+                                <svg class="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                                The "Hidden Hardness" Trap — Well Water Iron
+                            </h3>
+                            <p class="text-orange-900/80 text-sm leading-relaxed mb-3">If you are on <strong>private well water</strong>, iron acts as a hardness multiplier. It coats resin beads and dramatically reduces system lifespan if not accounted for.</p>
+                            <div class="bg-white/70 rounded-xl p-4 font-mono text-sm border border-orange-200">
+                                <div class="font-bold text-orange-900 mb-1">The Iron Rule: +4 GPG per 1 PPM iron</div>
+                                <div class="text-orange-800">Example: 15 GPG + (2 PPM iron &times; 4) = <strong>23 GPG compensated hardness</strong></div>
+                            </div>
+                            <p class="text-orange-800 text-xs mt-3 italic">Always use compensated hardness in your calculation below — never your raw GPG number alone.</p>
+                        </div>
+                    </div>
+
+                    <!-- ===== STEP 3 ===== -->
+                    <div id="step3" class="step-connector mb-12">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg shrink-0 shadow-lg shadow-primary/30">3</div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-secondary">Calculate Your Target Grain Capacity</h2>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed mb-6">Now combine both variables. A water softener should be sized so it regenerates (cleans itself) <strong>once every 7 days</strong>. This frequency maximizes resin lifespan and salt efficiency. Too often wastes salt; too infrequently risks bacterial growth.</p>
+
+                        <div class="bg-slate-900 text-white p-8 rounded-2xl mb-8 relative overflow-hidden shadow-xl">
+                            <div class="absolute top-0 right-0 w-40 h-40 bg-primary rounded-full mix-blend-multiply filter blur-2xl opacity-30 -mr-10 -mt-10"></div>
+                            <h3 class="text-xl font-bold mb-6 text-white flex items-center gap-2">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 11h.01M12 11h.01M15 11h.01M4 7h16M4 11h4m5 0h5M4 15h4m5 0h5"></path></svg>
+                                The Master Sizing Equation
+                            </h3>
+                            <div class="space-y-4 font-mono text-sm mb-6">
+                                <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                                    <div class="text-slate-400 text-xs mb-1">Step A</div>
+                                    <strong class="text-primary">Daily Grains</strong> = Daily Gallons &times; Compensated Hardness (GPG)
+                                </div>
+                                <div class="flex justify-center text-slate-500 text-lg">&#8595;</div>
+                                <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                                    <div class="text-slate-400 text-xs mb-1">Step B</div>
+                                    <strong class="text-primary">Target Grain Capacity</strong> = Daily Grains &times; 7 Days
+                                </div>
+                            </div>
+                            <div class="bg-primary/20 border border-primary/30 rounded-xl p-5 mt-4">
+                                <p class="text-slate-300 text-sm mb-2 font-semibold">Worked Example: 4 people, 15 GPG hardness, 2 PPM iron</p>
+                                <div class="text-blue-200 text-sm space-y-1 font-mono">
+                                    <div>Compensated hardness: 15 + (2 &times; 4) = <strong class="text-white">23 GPG</strong></div>
+                                    <div>Daily gallons: 4 &times; 75 = <strong class="text-white">300 gal</strong></div>
+                                    <div>Daily grains: 300 &times; 23 = <strong class="text-white">6,900 grains</strong></div>
+                                    <div>Target capacity: 6,900 &times; 7 = <strong class="text-white text-base">48,300 grains</strong></div>
+                                </div>
+                                <div class="mt-3 bg-white/10 rounded-lg p-3 text-center">
+                                    <span class="text-white font-bold">&#8594; Buy a <span class="text-primary text-lg">48,000 grain</span> water softener</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick reference table -->
+                        <h3 class="font-bold text-secondary mb-4 text-lg">Quick Reference: Common Household Sizes</h3>
+                        <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-sm">
+                            <table class="w-full text-left border-collapse bg-white text-sm">
+                                <thead>
+                                    <tr class="bg-slate-900 text-white">
+                                        <th class="p-3 font-semibold">Household</th>
+                                        <th class="p-3 font-semibold">10 GPG</th>
+                                        <th class="p-3 font-semibold">15 GPG</th>
+                                        <th class="p-3 font-semibold">20 GPG</th>
+                                        <th class="p-3 font-semibold">25 GPG</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100">
+                                    <tr class="hover:bg-slate-50"><td class="p-3 font-semibold text-slate-700">2 people</td><td class="p-3 text-slate-600">10,500</td><td class="p-3 text-slate-600">15,750</td><td class="p-3 text-slate-600">21,000</td><td class="p-3 text-slate-600">26,250</td></tr>
+                                    <tr class="hover:bg-slate-50 bg-blue-50/30"><td class="p-3 font-semibold text-slate-700">4 people</td><td class="p-3 font-bold text-primary">21,000</td><td class="p-3 font-bold text-primary">31,500</td><td class="p-3 font-bold text-primary">42,000</td><td class="p-3 font-bold text-primary">52,500</td></tr>
+                                    <tr class="hover:bg-slate-50"><td class="p-3 font-semibold text-slate-700">5 people</td><td class="p-3 text-slate-600">26,250</td><td class="p-3 text-slate-600">39,375</td><td class="p-3 text-slate-600">52,500</td><td class="p-3 text-slate-600">65,625</td></tr>
+                                    <tr class="hover:bg-slate-50"><td class="p-3 font-semibold text-slate-700">6 people</td><td class="p-3 text-slate-600">31,500</td><td class="p-3 text-slate-600">47,250</td><td class="p-3 text-slate-600">63,000</td><td class="p-3 text-slate-600">78,750</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-xs text-slate-500 mt-2 italic">Values shown are raw grain requirements. Round up to the nearest standard size (24k, 32k, 48k, 64k, 80k). These do not include iron compensation — add 4 GPG per 1 PPM iron before using this table.</p>
+                    </div>
+
+                    <!-- ===== STEP 4 ===== -->
+                    <div id="step4" class="step-connector mb-12">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg shrink-0 shadow-lg shadow-primary/30">4</div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-secondary">Verify Your Flow Rate (GPM)</h2>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed mb-6">This is where most buyers make their biggest mistake. You've calculated your grain capacity — but you must ensure the physical valve on top of the tank can deliver water fast enough for your home's plumbing. Flow rate is measured in <strong>Gallons Per Minute (GPM)</strong>.</p>
+                        <p class="text-slate-600 leading-relaxed mb-6">Cheap box-store softeners typically use a tiny ¾-inch valve that restricts flow to just 6–7 GPM. If someone is showering (2.5 GPM), the washing machine is filling (4 GPM), and a toilet is flushed (2 GPM) simultaneously — you've exceeded the valve capacity and pressure drops across your entire home.</p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                            <div class="bg-white border-2 border-slate-200 rounded-xl p-5 text-center hover:border-primary hover:shadow-md transition">
+                                <div class="text-3xl mb-2">&#127968;</div>
+                                <div class="font-bold text-secondary mb-1">1–2 Bathrooms</div>
+                                <div class="text-primary font-extrabold text-2xl">8+ GPM</div>
+                                <div class="text-xs text-slate-500 mt-1">Minimum valve rating</div>
+                            </div>
+                            <div class="bg-primary/5 border-2 border-primary rounded-xl p-5 text-center shadow-md">
+                                <div class="text-3xl mb-2">&#127968;&#127968;</div>
+                                <div class="font-bold text-secondary mb-1">3–4 Bathrooms</div>
+                                <div class="text-primary font-extrabold text-2xl">11–13 GPM</div>
+                                <div class="text-xs text-primary font-semibold mt-1">Most common need</div>
+                            </div>
+                            <div class="bg-white border-2 border-slate-200 rounded-xl p-5 text-center hover:border-primary hover:shadow-md transition">
+                                <div class="text-3xl mb-2">&#127968;&#127968;&#127968;</div>
+                                <div class="font-bold text-secondary mb-1">5+ Bathrooms</div>
+                                <div class="text-primary font-extrabold text-2xl">15–20+ GPM</div>
+                                <div class="text-xs text-slate-500 mt-1">High-flow valve required</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-blue-50 border border-blue-200 rounded-xl p-5">
+                            <p class="text-blue-900 text-sm"><strong>Pro Tip:</strong> SpringWell systems use 1-inch to 1.5-inch high-flow valving as standard — delivering 12–20 GPM depending on the model. This is why they're rated for large homes where box-store units fail. <a href="https://waterrefiner.com/info/springwell-futuresoft/" target="_blank" rel="noopener sponsored" class="text-primary font-semibold hover:underline">See SpringWell flow specs &rarr;</a></p>
+                        </div>
+                    </div>
+
+                    <!-- ===== STEP 5 ===== -->
+                    <div id="step5" class="step-connector mb-12">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg shrink-0 shadow-lg shadow-primary/30">5</div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-secondary">Select the Right Resin Quality</h2>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed mb-6">The resin inside the tank is made of millions of tiny ion-exchange beads that capture calcium and magnesium minerals. Their durability is rated by "cross-link percentage" — a measure of how tightly the polymer chains are bonded.</p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-slate-50 rounded-xl border border-slate-200 p-6">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-10 h-10 bg-slate-200 rounded-xl flex items-center justify-center font-bold text-slate-700">8%</div>
+                                    <h3 class="font-bold text-secondary">Standard Cross-Link</h3>
+                                </div>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-3">The industry baseline. Perfectly adequate for <strong>well water systems</strong> where chlorine is not present. Typically lasts 10-15 years in ideal conditions.</p>
+                                <div class="text-xs font-semibold text-slate-500 uppercase tracking-wide">Best for: Well Water</div>
+                            </div>
+                            <div class="bg-blue-50 rounded-xl border-2 border-primary p-6 shadow-sm">
+                                <div class="flex items-center gap-3 mb-3">
+                                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center font-bold text-white">10%</div>
+                                    <h3 class="font-bold text-secondary">Premium Cross-Link</h3>
+                                    <span class="bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded ml-auto">Recommended</span>
+                                </div>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-3">Municipal water plants inject chlorine and chloramines to kill bacteria. These chemicals slowly dissolve 8% resin into mush within 3-5 years. <strong>10% cross-link resin chemically resists chlorine</strong>, lasting 15-20+ years on city water.</p>
+                                <div class="text-xs font-semibold text-primary uppercase tracking-wide">Best for: City Water</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== STEP 6 ===== -->
+                    <div id="step6" class="mb-12">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-lg shrink-0 shadow-lg shadow-primary/30">6</div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-secondary">Choose the Right Valve Technology</h2>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed mb-6">The control head on top of the tank decides when the system regenerates. There are two types on the market — and the difference in long-term cost is enormous.</p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-red-50 rounded-xl border-2 border-red-200 p-6">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                    </div>
+                                    <h3 class="font-bold text-red-900">Timer-Based — Avoid</h3>
+                                </div>
+                                <p class="text-red-900/80 text-sm leading-relaxed">Regenerates on a fixed clock (e.g., every 4 days at 2 AM) regardless of actual water use. Go on vacation for two weeks? It still regenerates twice. The salt and water waste over 10 years is enormous. Only found on cheap or outdated systems.</p>
+                            </div>
+                            <div class="bg-green-50 rounded-xl border-2 border-green-500 p-6 shadow-sm">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                    </div>
+                                    <h3 class="font-bold text-green-900">Metered On-Demand — Buy This</h3>
+                                    <span class="bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded ml-auto">&#10003; Recommended</span>
+                                </div>
+                                <p class="text-green-900/80 text-sm leading-relaxed">Measures every single gallon flowing through your home. Calculates exactly when the resin is at capacity and only regenerates at that precise moment. Users typically save 30–40% on annual salt costs compared to timer systems. All professional-grade systems use metered valves.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== MISTAKES ===== -->
+                    <div id="mistakes" class="mb-12">
+                        <h2 class="text-2xl md:text-3xl font-bold text-secondary mb-6 flex items-center gap-3">
+                            <span class="text-2xl">&#9888;&#65039;</span> The Goldilocks Danger Zone: Sizing Mistakes
+                        </h2>
+                        <p class="text-slate-600 mb-6">What actually happens when you ignore the sizing math?</p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-white rounded-2xl border-l-4 border-red-500 shadow-sm p-6">
+                                <h3 class="font-bold text-red-800 mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                                    Sized Too Small
+                                </h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">If you put a 24,000-grain system in a home needing 48,000 grains, the system is forced to regenerate every 2–3 days. The mechanical valve wears out twice as fast, your salt budget doubles, and during peak usage you risk hard water slipping through your pipes while the tank is exhausted.</p>
+                                <ul class="mt-4 space-y-1 text-sm text-red-800/70">
+                                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-red-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>2x salt costs</li>
+                                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-red-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>Valve fails in 3–5 years</li>
+                                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-red-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>Hard water breakthrough</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white rounded-2xl border-l-4 border-orange-500 shadow-sm p-6">
+                                <h3 class="font-bold text-orange-800 mb-3 flex items-center gap-2">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+                                    Sized Too Large
+                                </h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">If you put an 80,000-grain system in a home only needing 32,000 grains, the water sits dormant in the resin tank for 3–4 weeks before a regeneration. This stagnation creates a bacterial risk inside the resin bed. Additionally, low water flow through an oversized tank causes <strong>"channeling"</strong> — water cuts a single groove through the resin instead of flowing evenly, meaning it isn't actually being softened.</p>
+                                <ul class="mt-4 space-y-1 text-sm text-orange-800/70">
+                                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-orange-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>Bacterial growth risk</li>
+                                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-orange-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>Channeling — poor softening</li>
+                                    <li class="flex items-center gap-2"><svg class="w-4 h-4 text-orange-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>Wasted money on oversized tank</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===== RECOMMENDATION ===== -->
+                    <div id="recommendation" class="mb-12">
+                        <h2 class="text-2xl md:text-3xl font-bold text-secondary mb-6">Our Recommendation: The System That Gets It Right</h2>
+                        <p class="text-slate-600 mb-6">After applying this 6-step method to hundreds of systems on the market, one brand consistently engineers to the exact specifications this guide demands.</p>
+
+                        <!-- Product box -->
+                        <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden mb-6">
+                            <div class="h-2 bg-gradient-to-r from-primary to-blue-600"></div>
+                            <div class="p-8">
+                                <div class="flex flex-col md:flex-row gap-8 items-start">
+                                    <div class="w-full md:w-1/3">
+                                        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 text-center">
+                                            <svg class="w-16 h-16 text-primary mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                                            <div class="text-xs font-bold text-primary uppercase tracking-widest">&#127942; Editor's Choice</div>
+                                            <div class="text-yellow-400 mt-2 text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                            <div class="text-sm font-bold text-slate-600">4.9/5 Average</div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full md:w-2/3">
+                                        <h3 class="text-2xl font-bold text-secondary mb-2">SpringWell FutureSoft &amp; Salt-Based Systems</h3>
+                                        <p class="text-slate-600 mb-5 leading-relaxed text-sm">SpringWell engineers their systems to match every metric in this guide — high-flow 1-inch to 1.5-inch valving, smart metered on-demand regeneration, and premium 10% cross-link resin as standard on city water models. Their FutureSoft line goes further with salt-free TAC technology that eliminates regeneration entirely.</p>
+
+                                        <div class="space-y-2 mb-6 text-sm">
+                                            <div class="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
+                                                <span class="font-bold text-primary w-28 shrink-0">FutureSoft:</span>
+                                                <span class="text-slate-600">Salt-free conditioner — no maintenance, no backwash, no brine</span>
+                                            </div>
+                                            <div class="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
+                                                <span class="font-bold text-primary w-28 shrink-0">SS1 (32k):</span>
+                                                <span class="text-slate-600">1–3 bathrooms, 11 GPM, ideal for 2–4 people at 10–15 GPG</span>
+                                            </div>
+                                            <div class="flex items-center gap-3 bg-slate-50 rounded-lg p-3">
+                                                <span class="font-bold text-primary w-28 shrink-0">SS4 (48k):</span>
+                                                <span class="text-slate-600">4+ bathrooms, 13 GPM, well water or high hardness</span>
+                                            </div>
+                                            <div class="flex items-center gap-3 bg-amber-50 rounded-lg p-3 border border-amber-200">
+                                                <span class="font-bold text-amber-700 w-28 shrink-0">CSS1 Combo:</span>
+                                                <span class="text-slate-600">Adds whole-house carbon filter — ideal for iron and well water</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex flex-col sm:flex-row gap-3">
+                                            <a href="https://waterrefiner.com/info/springwell-futuresoft/" target="_blank" rel="noopener sponsored" class="flex-1 text-center bg-primary hover:bg-primaryDark text-white py-3 px-6 rounded-xl font-bold transition shadow-lg shadow-primary/20">
+                                                &#127942; Shop SpringWell FutureSoft &rarr;
+                                            </a>
+                                            <a href="https://waterrefiner.com/info/css1/" target="_blank" rel="noopener sponsored" class="flex-1 text-center bg-amber-500 hover:bg-amber-400 text-white py-3 px-6 rounded-xl font-bold transition shadow-lg">
+                                                &#128167; Filter + Softener Combo &rarr;
+                                            </a>
+                                        </div>
+                                        <p class="text-xs text-slate-400 mt-3 italic">Affiliate disclosure: We earn a small commission if you purchase through our links, at no extra cost to you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skip the math -->
+                        <div class="bg-slate-100 border border-slate-200 rounded-2xl p-8 text-center">
+                            <h3 class="text-xl font-bold text-secondary mb-3">Too Much Math? Use Our Free Calculator</h3>
+                            <p class="text-slate-600 mb-6 max-w-2xl mx-auto text-sm">Our automated sizing engine runs all these calculations — daily gallons, compensated hardness, iron adjustments, flow rates — instantly. Just enter your household size and water hardness.</p>
+                            <a href="index.html#calculator" class="inline-block bg-secondary hover:bg-slate-800 text-white px-8 py-4 rounded-full font-bold transition shadow-lg">
+                                Open the Free Sizing Calculator &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ===== FAQ ===== -->
+                    <div id="faq" class="mb-12">
+                        <h2 class="text-2xl md:text-3xl font-bold text-secondary mb-6">Frequently Asked Questions</h2>
+                        <div class="space-y-4">
+                            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center hover:bg-slate-50 transition" onclick="toggleFaq(this)">
+                                    <span class="font-bold text-slate-800 pr-4">What size water softener do I need for a family of 4?</span>
+                                    <svg class="w-5 h-5 text-slate-400 shrink-0 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="faq-answer px-6 bg-white" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease-out;">
+                                    <p class="pb-5 text-slate-600 text-sm leading-relaxed">A family of 4 at 10 GPG hardness needs: 4 &times; 75 = 300 daily gallons &times; 10 GPG = 3,000 daily grains &times; 7 days = <strong>21,000 grain target</strong>. A <strong>32,000 grain system</strong> is the ideal match, providing headroom for above-average usage days. If your hardness is above 15 GPG, recalculate — you may need a 48,000 grain unit. <a href="family-of-4.html" class="text-primary font-semibold hover:underline">See our full Family of 4 Sizing Guide &rarr;</a></p>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center hover:bg-slate-50 transition" onclick="toggleFaq(this)">
+                                    <span class="font-bold text-slate-800 pr-4">What happens if my water softener is too small?</span>
+                                    <svg class="w-5 h-5 text-slate-400 shrink-0 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="faq-answer px-6 bg-white" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease-out;">
+                                    <p class="pb-5 text-slate-600 text-sm leading-relaxed">An undersized water softener regenerates every 2–3 days instead of the ideal 7. This doubles your annual salt usage, wears out the control valve 2x faster (requiring a costly replacement in 3–5 years), and risks <strong>hard water breakthrough</strong> during peak demand periods when the resin is temporarily exhausted.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center hover:bg-slate-50 transition" onclick="toggleFaq(this)">
+                                    <span class="font-bold text-slate-800 pr-4">Is a 48,000 grain water softener better than 32,000?</span>
+                                    <svg class="w-5 h-5 text-slate-400 shrink-0 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="faq-answer px-6 bg-white" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease-out;">
+                                    <p class="pb-5 text-slate-600 text-sm leading-relaxed">Only if your math requires it. A 48,000 grain system holds 1.5 cubic feet of resin vs 1.0 cubic feet. If your calculated grain need is under 32,000, the larger system may cause channeling (uneven water flow through resin) and potential bacterial growth from regenerating too infrequently — once every 3+ weeks. <strong>Bigger is not always better.</strong> Match the size to your calculation. <a href="grain-size.html" class="text-primary font-semibold hover:underline">Learn more about grain capacity &rarr;</a></p>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center hover:bg-slate-50 transition" onclick="toggleFaq(this)">
+                                    <span class="font-bold text-slate-800 pr-4">How do I account for iron when sizing a water softener?</span>
+                                    <svg class="w-5 h-5 text-slate-400 shrink-0 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="faq-answer px-6 bg-white" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease-out;">
+                                    <p class="pb-5 text-slate-600 text-sm leading-relaxed">Add 4 GPG to your hardness score for every 1 PPM of iron. Example: 15 GPG hardness + 2 PPM iron = 15 + (2 &times; 4) = <strong>23 GPG compensated hardness</strong>. Always use this compensated number in the grain capacity formula. For well water with iron above 3 PPM, we strongly recommend the <a href="https://waterrefiner.com/info/css1/" target="_blank" rel="noopener sponsored" class="text-primary font-semibold hover:underline">CSS1 Filter + Softener Combo</a> which includes an iron pre-filter.</p>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                                <button class="faq-btn w-full text-left px-6 py-5 flex justify-between items-center hover:bg-slate-50 transition" onclick="toggleFaq(this)">
+                                    <span class="font-bold text-slate-800 pr-4">How often should a water softener regenerate?</span>
+                                    <svg class="w-5 h-5 text-slate-400 shrink-0 transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="faq-answer px-6 bg-white" style="max-height:0;overflow:hidden;transition:max-height 0.3s ease-out;">
+                                    <p class="pb-5 text-slate-600 text-sm leading-relaxed">The WQA-recommended ideal is <strong>once every 7 days</strong>. This is the frequency that maximizes resin lifespan, minimizes salt usage per gallon softened, and prevents both hard water breakthrough (too infrequent) and excessive wear (too frequent). Our sizing calculator automatically targets the 7-day regeneration window.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Related guides bar -->
+                    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6">
+                        <h3 class="font-bold text-secondary mb-4">Continue Reading: Specific Household Guides</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <a href="family-of-4.html" class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 hover:bg-blue-50 hover:border-primary border border-transparent transition">
+                                <div class="w-10 h-10 bg-primary/10 text-primary rounded-xl flex items-center justify-center shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+                                <div><div class="font-semibold text-slate-800 text-sm">Family of 4 Guide</div><div class="text-xs text-slate-500">Exact sizing for a 4-person home</div></div>
+                            </a>
+                            <a href="family-of-5.html" class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 hover:bg-blue-50 hover:border-primary border border-transparent transition">
+                                <div class="w-10 h-10 bg-primary/10 text-primary rounded-xl flex items-center justify-center shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+                                <div><div class="font-semibold text-slate-800 text-sm">Family of 5 Guide</div><div class="text-xs text-slate-500">The tipping point between 32k and 48k</div></div>
+                            </a>
+                            <a href="large-house.html" class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 hover:bg-blue-50 hover:border-primary border border-transparent transition">
+                                <div class="w-10 h-10 bg-primary/10 text-primary rounded-xl flex items-center justify-center shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+                                <div><div class="font-semibold text-slate-800 text-sm">Large House Guide</div><div class="text-xs text-slate-500">4+ bathrooms, high-flow requirements</div></div>
+                            </a>
+                            <a href="grain-size.html" class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 hover:bg-blue-50 hover:border-primary border border-transparent transition">
+                                <div class="w-10 h-10 bg-primary/10 text-primary rounded-xl flex items-center justify-center shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+                                <div><div class="font-semibold text-slate-800 text-sm">Grain Size Explained</div><div class="text-xs text-slate-500">What grain capacity really means</div></div>
+                            </a>
+                        </div>
+                    </div>
+
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Footer affiliate strip -->
+            <div class="mb-12 p-6 bg-slate-800 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4">
+                <div>
+                    <p class="text-white font-bold text-lg">Our Top Picks &mdash; Trusted by 10,000+ Homeowners</p>
+                    <p class="text-slate-400 text-sm">Free shipping &bull; Lifetime warranty &bull; 6-month money-back guarantee</p>
+                </div>
+                <div class="flex gap-3">
+                    <a href="https://waterrefiner.com/info/springwell-futuresoft/" target="_blank" rel="noopener sponsored" class="bg-primary hover:bg-primaryDark text-white font-bold px-5 py-2.5 rounded-full transition text-sm whitespace-nowrap">FutureSoft &rarr;</a>
+                    <a href="https://waterrefiner.com/info/css1/" target="_blank" rel="noopener sponsored" class="bg-amber-500 hover:bg-amber-400 text-white font-bold px-5 py-2.5 rounded-full transition text-sm whitespace-nowrap">Filter Combo &rarr;</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        <span class="font-bold text-xl text-white tracking-tight">Pure<span class="text-primary">Size</span></span>
+                    </div>
+                    <p class="text-slate-400 text-sm max-w-md">Engineering the perfect fit for your home's specific water chemistry. Stop guessing, start softening efficiently.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="index.html#calculator" class="hover:text-primary transition">Sizing Calculator</a></li>
+                        <li><a href="index.html#guide" class="hover:text-primary transition">Buying Guide</a></li>
+                        <li><a href="index.html#reviews" class="hover:text-primary transition">Top Softeners 2026</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Sizing Guides</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="how-to-choose-water-softener-size.html" class="text-primary font-semibold">How to Choose Size</a></li>
+                        <li><a href="large-house.html" class="hover:text-primary transition">Large House</a></li>
+                        <li><a href="family-of-5.html" class="hover:text-primary transition">Family of 5</a></li>
+                        <li><a href="family-of-4.html" class="hover:text-primary transition">Family of 4</a></li>
+                        <li><a href="apartments.html" class="hover:text-primary transition">Apartments &amp; Condos</a></li>
+                        <li><a href="grain-size.html" class="hover:text-primary transition">Grain Size Explained</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Top Products</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://waterrefiner.com/info/springwell-futuresoft/" target="_blank" rel="noopener sponsored" class="text-primary hover:text-blue-300 transition font-semibold">&#127942; SpringWell FutureSoft</a></li>
+                        <li><a href="https://waterrefiner.com/info/css1/" target="_blank" rel="noopener sponsored" class="text-amber-400 hover:text-amber-300 transition font-semibold">&#128167; Filter + Softener Combo</a></li>
+                        <li><a href="privacy.html" class="text-slate-400 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-slate-400 hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="affiliate.html" class="text-slate-400 hover:text-white transition">Affiliate Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 PureSize Water Treatment Engineering. All rights reserved.</p>
+                <p class="mt-2 md:mt-0">Data methodology complies with WQA Sizing Standards. | <a href="affiliate.html" class="hover:text-slate-300 underline">Affiliate Disclosure</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+        function toggleFaq(btn) {
+            const answer = btn.nextElementSibling;
+            const icon = btn.querySelector('.faq-icon');
+            if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+                answer.style.maxHeight = null;
+                icon.classList.remove('rotate-180');
+            } else {
+                document.querySelectorAll('.faq-answer').forEach(el => { el.style.maxHeight = null; });
+                document.querySelectorAll('.faq-icon').forEach(el => { el.classList.remove('rotate-180'); });
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.classList.add('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>
