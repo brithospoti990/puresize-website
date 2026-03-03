@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block legal/utility pages from wasting crawl budget
+Disallow: /privacy
+Disallow: /terms
+Disallow: /affiliate
+
+# Sitemap location
+Sitemap: https://sizingwatersoftener.com/sitemap.xml
